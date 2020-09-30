@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    
+    <style type="text/css">
+        .tombol{
+         background-color: lightgreen;
+        }
+        .tabel{
+         background-color: lightblue;
+         margin: 10px;
+         padding: 10px;
+        }
+		body {
+		 margin-right: 0px;
+		 background-attachment: fixed;
+		 background-color: lightblue;
+		}
+    </style>
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <form name="calculator">
+        <table style="background-color: lightblue" class="tabel">
+            <caption>Basic Calculator</caption>
+                <tr>
+                    <td>Input 1</td><td>:</td><td><input type="number" name="angka1"></td>
+                </tr>
+
+                <tr>
+                    <td>Input 2</td><td>:</td><td><input type="number" name="angka2"></td>
+                </tr>
+                <tr>
+                    <td colspan="8" align="right">
+                        <input class="tombol" type="button" onclick="tambah()" value="  +  ">
+                        <input class="tombol" type="button" onclick="kurang()" value="  -  ">
+                        <input class="tombol" type="button" onclick="kali()" value="  *  ">
+                        <input class="tombol" type="button" onclick="bagi()" value="  /  ">
+                    </td>
+					 <tr>
+                    <td>Hasil</td><td>:</td><td><input type="number" name="hasil"></td>
+                </tr>
+                </tr>  
+        </table>
+    </form>
+</body>
+</html>
